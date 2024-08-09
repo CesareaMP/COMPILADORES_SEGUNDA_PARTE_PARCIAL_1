@@ -1,0 +1,14 @@
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\bin\Debug\net8.0\LL1.exe
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\bin\Debug\net8.0\LL1.deps.json
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\bin\Debug\net8.0\LL1.runtimeconfig.json
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\bin\Debug\net8.0\LL1.dll
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\bin\Debug\net8.0\LL1.pdb
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0\LL1.GeneratedMSBuildEditorConfig.editorconfig
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0\LL1.AssemblyInfoInputs.cache
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0\LL1.AssemblyInfo.cs
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0\LL1.csproj.CoreCompileInputs.cache
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0\LL1.dll
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0\refint\LL1.dll
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0\LL1.pdb
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0\LL1.genruntimeconfig.cache
+d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0\ref\LL1.dll
