@@ -31,56 +31,75 @@
     })
 };
 
+string Evaluate(string Sinput){
+    string help = "<if_stmt>,";
+    string[] parts= Array.ConvertAll(Sinput.Split(' '), p => p.Trim());
 
-Console.WriteLine("Escriba su input para la gramatica separado por espacios");
-string Sinput = Console.ReadLine();
-string help = "<if_stmt>,";
-string[] parts= Array.ConvertAll(Sinput.Split(' '), p => p.Trim());
+    Stack<string> SparsingStack = new Stack<string>();
+    SparsingStack.Push("eof");
+    SparsingStack.Push("<if_stmt>");
 
-System.Console.WriteLine(parts[0]);
+    while(SparsingStack.Count > 0){
+        string top = SparsingStack.Pop();
 
-Stack<string> SparsingStack = new Stack<string>();
-SparsingStack.Push("eof");
-SparsingStack.Push("<if_stmt>");
-
-while(SparsingStack.Count > 0){
-    string top = SparsingStack.Pop();
-
-    if(parts.Length == 0){
-        parts = parts.Append("ε").ToArray();
-    }
-
-    if(top.StartsWith("<") && top.EndsWith(">")){
-        var f_non_terminal = LTparsing_table.FirstOrDefault(nt => nt.non_terminal == top);
-        List<(string terminal, List<string> t_productions)> non_terminal_productions = f_non_terminal.nt_productions;
-
-        var f_terminal = non_terminal_productions.FirstOrDefault(nt => nt.terminal == parts[0]);
-        List<string> terminal_productions = f_terminal.t_productions;
-
-        if(terminal_productions != null){
-            int Iindex = -1;
-            for(int i = 0; i < terminal_productions.Count; i++){
-                if(terminal_productions[i].Split(' ')[0] == parts[0] || terminal_productions[i] == "ε"){
-                    Iindex = i;
-                    break;
-                }
-            }
-
-        if (terminal_productions[Iindex] != "ε"){
-            var productionToPush = terminal_productions[Iindex].Split(' ');
-                for (int i = productionToPush.Length - 1; i >= 0; i--){
-                    SparsingStack.Push(productionToPush[i]);
-                }
-            }
+        if(parts.Length == 0){
+            parts = parts.Append("ε").ToArray();
         }
-        else break;
+
+        if(top.StartsWith("<") && top.EndsWith(">")){
+            var f_non_terminal = LTparsing_table.FirstOrDefault(nt => nt.non_terminal == top);
+            List<(string terminal, List<string> t_productions)> non_terminal_productions = f_non_terminal.nt_productions;
+
+            var f_terminal = non_terminal_productions.FirstOrDefault(nt => nt.terminal == parts[0]);
+            List<string> terminal_productions = f_terminal.t_productions;
+
+            if(terminal_productions != null){
+                int Iindex = -1;
+                for(int i = 0; i < terminal_productions.Count; i++){
+                    if(terminal_productions[i].Split(' ')[0] == parts[0] || terminal_productions[i] == "ε"){
+                        Iindex = i;
+                        break;
+                    }
+                }
+
+            if (terminal_productions[Iindex] != "ε"){
+                var productionToPush = terminal_productions[Iindex].Split(' ');
+                    for (int i = productionToPush.Length - 1; i >= 0; i--){
+                        SparsingStack.Push(productionToPush[i]);
+                    }
+                }
+            }
+            else break;
+        }
+        else if (top == parts[0]){
+            parts = parts.Skip(1).ToArray();
+        }
+        else{
+            break;
+        }
     }
-    else if (top == parts[0]){
-        parts = parts.Skip(1).ToArray();
-    }
-    else{
-        break;
-    }
+if(parts[0] == "ε" && SparsingStack.Count == 0) return "CADENA ACEPTADA";
+else return "CADENA NO ACEPTADA";
 }
-if(parts[0] == "ε" && SparsingStack.Count == 0) System.Console.WriteLine("CADENA ACEPTADA");
-else System.Console.WriteLine("CADENA NO ACEPTADA");
+
+System.Console.WriteLine("CADENA 1: if ID then ID");
+System.Console.WriteLine(Evaluate("if ID then ID\n"));
+
+System.Console.WriteLine("CADENA 2: if ID then ID else NUM");
+System.Console.WriteLine(Evaluate("if ID then ID else NUM\n"));
+
+System.Console.WriteLine("CADENA 3: if NUM then NUM");
+System.Console.WriteLine(Evaluate("if NUM then NUM\n"));
+
+System.Console.WriteLine("CADENA 4: if then ID");
+System.Console.WriteLine(Evaluate("if then ID\n"));
+
+System.Console.WriteLine("CADENA 5: if ID then ID else then");
+System.Console.WriteLine(Evaluate("if ID then ID else then\n"));
+
+System.Console.WriteLine("CADENA 6: if ID then ID else then");
+System.Console.WriteLine(Evaluate("if ID then ID else then\n"));
+
+System.Console.WriteLine("Ingrese su cadena separada por espacios");
+string input = Console.ReadLine();
+System.Console.WriteLine(Evaluate(input));

@@ -12,3 +12,18 @@ d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0
 d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0\LL1.pdb
 d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0\LL1.genruntimeconfig.cache
 d:\OneDrive - Universidad Rafael Landivar\DEV\C#\LL1 PARSER\LL1\obj\Debug\net8.0\ref\LL1.dll
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\bin\Debug\net8.0\LL1.exe
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\bin\Debug\net8.0\LL1.deps.json
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\bin\Debug\net8.0\LL1.runtimeconfig.json
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\bin\Debug\net8.0\LL1.dll
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\bin\Debug\net8.0\LL1.pdb
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\obj\Debug\net8.0\LL1.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\obj\Debug\net8.0\LL1.AssemblyInfoInputs.cache
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\obj\Debug\net8.0\LL1.AssemblyInfo.cs
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\obj\Debug\net8.0\LL1.csproj.CoreCompileInputs.cache
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\obj\Debug\net8.0\LL1.sourcelink.json
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\obj\Debug\net8.0\LL1.dll
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\obj\Debug\net8.0\refint\LL1.dll
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\obj\Debug\net8.0\LL1.pdb
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\obj\Debug\net8.0\LL1.genruntimeconfig.cache
+c:\Users\hyasia\Desktop\COMPIS XD\COMPILADORES_SEGUNDA_PARTE_PARCIAL_1\LL1\obj\Debug\net8.0\ref\LL1.dll
